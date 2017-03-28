@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Scalatra">
+		<link rel="icon" href="https://dozed.github.io/hugo-site//favicon.ico">
+		<title>Reverse routes - Scalatra</title>
+		
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/highlight/github.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/theme.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootie-docs.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/site.css">
+	</head>
+
+<body role="document">
+
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="https://dozed.github.io/hugo-site//">Scalatra</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+			
+			
+				
+					<li ><a href="/hugo-site/getting-started/">Getting started</a></li>
+				
+					<li ><a href="/hugo-site/guides/">Guides</a></li>
+				
+					<li ><a href="/hugo-site/news/">News</a></li>
+				
+					<li ><a href="/hugo-site/community/">Community</a></li>
+				
+			
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">API docs<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.5/org/scalatra/">2.5</a></li>
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.4/org/scalatra/">2.4</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+
+
+<div class="row">
+
+	
+
+<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
+	<div id="sidebar">
+	<div class="sidebar-module">
+		<div class="sidebar-toc">
+			<h4 class="sidebar-heading">Table of Contents</h4>
+			<ul>
+				<li><strong><a href="#title">Reverse routes</a></strong></li>
+			</ul>
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#url-support-and-reverse-routes">URL support and reverse routes</a>
+<ul>
+<li><a href="#page-relative-url">Page relative url:</a></li>
+<li><a href="#context-relative-url">Context relative url:</a></li>
+<li><a href="#mapped-params">Mapped params:</a></li>
+<li><a href="#reverse-routes">Reverse routes:</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+	<div class="col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Reverse routes</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="0001-01-01">January 01, 0001</time></span>
+				</div>
+				<section>
+					
+
+<h3 id="url-support-and-reverse-routes">URL support and reverse routes</h3>
+
+<p><code>ScalatraBase</code> provides two instances that provide you with relative URLs.
+The <code>url</code> method will return a string that can be used in your output or a
+redirect statement.</p>
+
+<div class="alert alert-info">
+  <span class="badge badge-info"><i class="icon-flag icon-white"></i></span>
+  The
+  <a href="{{site.examples}}http/scalatra-http-demo">scalatra-http-demo</a>
+  is a good place to start if you'd like to see working url-related examples.
+</div>
+
+<p>In Scalatra 2.0.x, you used to need to extend the <code>UrlSupport</code> trait, but
+that&rsquo;s now been moved into <code>ScalatraBase</code>, so all you need is:</p>
+
+<pre><code class="language-scala">class MyApp extends ScalatraServlet {
+
+}
+</code></pre>
+
+<h4 id="page-relative-url">Page relative url:</h4>
+
+<pre><code class="language-scala">get(&quot;/&quot;){
+  // This will redirect to http://&lt;host&gt;/page-relative
+  redirect(url(&quot;page-relative&quot;))
+}
+</code></pre>
+
+<h4 id="context-relative-url">Context relative url:</h4>
+
+<pre><code class="language-scala">get(&quot;/&quot;){
+  // This will redirect to http://&lt;host&gt;/&lt;context&gt;/context-relative
+  redirect(url(&quot;/context-relative&quot;))
+}
+</code></pre>
+
+<h4 id="mapped-params">Mapped params:</h4>
+
+<pre><code class="language-scala">get(&quot;/&quot;) {
+  // This will redirect to http://&lt;host&gt;/&lt;context&gt;/en-to-es?one=uno&amp;two=dos
+  redirect( url(&quot;/en-to-es&quot;, Map(&quot;one&quot; -&gt; &quot;uno&quot;, &quot;two&quot; -&gt; &quot;dos&quot;)) )
+}
+</code></pre>
+
+<h4 id="reverse-routes">Reverse routes:</h4>
+
+<p>It is possible to save your routes as variables so that they have convenient
+handles:</p>
+
+<pre><code class="language-scala">class MyApp extends ScalatraServlet with UrlGeneratorSupport {
+  // When you create a route, you can save it as a variable
+  val viewUser = get(&quot;/user/:id&quot;) {
+     // your user action would go here
+   }
+
+  post(&quot;/user/new&quot;) {
+    // url method provided by UrlGeneratorSupport.  Pass it the route
+    // and the params.
+    redirect(url(viewUser, &quot;id&quot; -&gt; newUser.id))
+  }
+}
+</code></pre>
+
+<p>There&rsquo;s also a <code>ScalateUrlGeneratorSupport</code>.  It reflectively finds all
+members of your app of type Route (e.g., viewUser above) and makes them
+available in your templates.  You should then be able to do something like this
+right in your templates:</p>
+
+<pre><code class="language-scala">url(viewUser, &quot;id&quot; -&gt; 1)
+</code></pre>
+
+				</section>
+			</article>
+		</main>
+	</div> 
+
+</div> 
+
+
+<hr />
+
+<div class="row">
+	<div class="col-sm-8">
+		<p class="doc-footer-em"><a href="#" onclick="resetSidebarPos()">Back to TOP</a></p>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+	
+	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
+</footer>
+
+
+
+<script src="https://dozed.github.io/hugo-site//js/jquery.min.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootstrap.min.js"></script>
+
+<script src="https://dozed.github.io/hugo-site//js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://dozed.github.io/hugo-site//js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootie-docs.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Scalatra">
+		<link rel="icon" href="https://dozed.github.io/hugo-site//favicon.ico">
+		<title>Scalatra 2.4.0 will be out soon - Scalatra</title>
+		
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/highlight/github.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/theme.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootie-docs.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/site.css">
+	</head>
+
+<body role="document">
+
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="https://dozed.github.io/hugo-site//">Scalatra</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+			
+			
+				
+					<li ><a href="/hugo-site/getting-started/">Getting started</a></li>
+				
+					<li ><a href="/hugo-site/guides/">Guides</a></li>
+				
+					<li ><a href="/hugo-site/news/">News</a></li>
+				
+					<li ><a href="/hugo-site/community/">Community</a></li>
+				
+			
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">API docs<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.5/org/scalatra/">2.5</a></li>
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.4/org/scalatra/">2.4</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+
+
+<div class="row">
+
+	
+
+<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
+	<div id="sidebar">
+	<div class="sidebar-module">
+		<div class="sidebar-toc">
+			<h4 class="sidebar-heading">Table of Contents</h4>
+			<ul>
+				<li><strong><a href="#title">Scalatra 2.4.0 will be out soon</a></strong></li>
+			</ul>
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#scalatra-core">Scalatra Core</a>
+<ul>
+<li><a href="#scalatra-cache">Scalatra Cache</a></li>
+</ul></li>
+<li><a href="#scalatra-commands">Scalatra Commands</a>
+<ul>
+<li><a href="#scalatra-json">Scalatra Json</a></li>
+<li><a href="#scalatra-scalate">Scalatra Scalate</a></li>
+<li><a href="#scalatra-metrics">Scalatra Metrics</a></li>
+<li><a href="#scalatra-scalatest">Scalatra ScalaTest</a></li>
+<li><a href="#scalatra-atmosphere">Scalatra Atmosphere</a></li>
+<li><a href="#scalatra-swagger">Scalatra Swagger</a></li>
+<li><a href="#scalatra-specs2">Scalatra Specs2</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+	<div class="col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Scalatra 2.4.0 will be out soon</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2015-10-07">October 07, 2015</time></span>
+				</div>
+				<section>
+					<p>The Scalatra team is pleased to announce the release of Scalatra 2.4.0.RC3.</p>
+
+<p></p>
+
+<p>2.4.0 release has many improvements and bugfixes as listed below.</p>
+
+<p>If this version looks fine, we&rsquo;d like to release 2.4.0 soon. Please try it out within days!</p>
+
+<h2 id="scalatra-core">Scalatra Core</h2>
+
+<ul>
+<li>Removes the DefaultValue type class</li>
+<li>#434 Added support for generic content-encoding / decoding by @nrinaudo</li>
+<li>#436 Renamed GZipSupport to ContentEncodingSupport by @nrinaudo</li>
+<li>#438 Fix MIME type for .ogv (Ogg Video) by @abhalla-atl</li>
+<li>#452 Optimize imports by using IntelliJ IDEA by @seratch</li>
+<li>#453 Some code cleanup on core project by @seratch</li>
+<li>#456 Add explicit return types to core APIs, other improvements by @seratch</li>
+<li>#460 ScalatraServlet as a trait instead of an abstract class by @seratch</li>
+<li>#471 Fix #470 Add an implicit request to the cookies method by @seratch</li>
+<li>#474 Fix duplicated multiParams when multipart/form-data requests by @seratch</li>
+<li>#477 Bump Scala minor version (2.11.6, 2.10.5)  by @seratch</li>
+<li>#481 Bump minor version of dependencies by @seratch</li>
+<li>#483 Fix an XXE Vulnerability related to scala.xml.XML library by @seratch</li>
+<li>#500 Improve automatic charset detection performance by @takezoe</li>
+<li>#502 Bump minor version of dependencies by @seratch</li>
+<li>#514 Improve request/response stability wthin AsyncResult by @lloydmeta</li>
+<li>#528 Fix #435 Error with FutureSupport and ScalateI18nSupport using templating by @dozed</li>
+<li>#516 Introduce stable request response macro by @dozed</li>
+<li>#544 Removed request/response scoping macro from 2.4.x release by @dozed</li>
+<li>#535 [2.4.x] Fix #531 Params and multiParams are empty for PATCH request by @seratch</li>
+<li>#545 Bump dependencies and scala minor version by @seratch</li>
+</ul>
+
+<h3 id="scalatra-cache">Scalatra Cache</h3>
+
+<ul>
+<li>#455 Scalatra cache by @japhar81</li>
+<li>#541 Fixes double evaluation of result by @offner</li>
+</ul>
+
+<h2 id="scalatra-commands">Scalatra Commands</h2>
+
+<ul>
+<li>(Breaking change) Removes the default value for types, instead a field is now started in an invalid state by @casualjim</li>
+<li>(Breaking change) field.optional now is an alias for field.withDefaultValue(theDefault) by @casualjim</li>
+<li>#447 Minor upgrades and deprecation warnings reduction by @seratch</li>
+<li>#510 Fix deprecated APIs in Scalaz&rsquo;s ValidationOps by @xuwei-k</li>
+</ul>
+
+<h3 id="scalatra-json">Scalatra Json</h3>
+
+<ul>
+<li>#432 Introduce a JsonResult type by @dozed</li>
+<li>#440 Take Formats bigDecimal setting into account when parsing. by @dozed</li>
+<li>#490 Bump json4s version to 3.3.0.RC1 by @seratch</li>
+<li>#504 Fix #496 Rendering JNull in a servlet by @seratch</li>
+<li>#512 Fix jackson json initialization issue (NPE) by @dozed</li>
+</ul>
+
+<h3 id="scalatra-scalate">Scalatra Scalate</h3>
+
+<ul>
+<li>#444 Aligned template directory to new default (integrates with template-comp iler and g8 template). by @dozed</li>
+<li>#449 Fix Scalatra Test so client can send multiple headers of the same name by @shintasmith</li>
+<li>#476 Bump Scalate version to avoid NPEs by @lloydmeta</li>
+</ul>
+
+<h3 id="scalatra-metrics">Scalatra Metrics</h3>
+
+<ul>
+<li>#441 Added basic metrics support by @japhar81</li>
+<li>#442 Added metrics support for response code filter by @japhar81</li>
+<li>#505 Upgrade to metrics-scala-3.5.1 by @rossabaker</li>
+</ul>
+
+<h3 id="scalatra-scalatest">Scalatra ScalaTest</h3>
+
+<ul>
+<li>#458 Made the traits extend the new -Like scalatest traits. by @DrDub</li>
+</ul>
+
+<h3 id="scalatra-atmosphere">Scalatra Atmosphere</h3>
+
+<ul>
+<li>#492 Bump atmosphere-runtime to 2.2 by @adamretter</li>
+</ul>
+
+<h3 id="scalatra-swagger">Scalatra Swagger</h3>
+
+<ul>
+<li>#490 Switch scalap to json4s-scalap since json4s 3.3.0 by @seratch</li>
+</ul>
+
+<h3 id="scalatra-specs2">Scalatra Specs2</h3>
+
+<ul>
+<li>#508 Updated specs2 to 3.6.+ by @etorreborre</li>
+</ul>
+				</section>
+			</article>
+		</main>
+	</div> 
+
+</div> 
+
+
+<hr />
+
+<div class="row">
+	<div class="col-sm-8">
+		<p class="doc-footer-em"><a href="#" onclick="resetSidebarPos()">Back to TOP</a></p>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+	
+	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
+</footer>
+
+
+
+<script src="https://dozed.github.io/hugo-site//js/jquery.min.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootstrap.min.js"></script>
+
+<script src="https://dozed.github.io/hugo-site//js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://dozed.github.io/hugo-site//js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootie-docs.js"></script>
+
+</body>
+</html>
+

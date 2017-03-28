@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Scalatra">
+		<link rel="icon" href="https://dozed.github.io/hugo-site//favicon.ico">
+		<title>Installation - Scalatra</title>
+		
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/highlight/github.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/theme.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootie-docs.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/site.css">
+	</head>
+
+<body role="document">
+
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="https://dozed.github.io/hugo-site//">Scalatra</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+			
+			
+				
+					<li ><a href="/hugo-site/getting-started/">Getting started</a></li>
+				
+					<li ><a href="/hugo-site/guides/">Guides</a></li>
+				
+					<li ><a href="/hugo-site/news/">News</a></li>
+				
+					<li ><a href="/hugo-site/community/">Community</a></li>
+				
+			
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">API docs<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.5/org/scalatra/">2.5</a></li>
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.4/org/scalatra/">2.4</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+
+
+<div class="row">
+
+	
+
+<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
+	<div id="sidebar">
+	<div class="sidebar-module">
+		<div class="sidebar-toc">
+			<h4 class="sidebar-heading">Table of Contents</h4>
+			<ul>
+				<li><strong><a href="#title">Installation</a></strong></li>
+			</ul>
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-install-a-jdk">1. Install a JDK</a></li>
+<li><a href="#2-install-giter8">2. Install giter8</a>
+<ul>
+<li><a href="#install-conscript">Install conscript</a></li>
+<li><a href="#install-giter8-h4">Install giter8</h4></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+	<div class="col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Installation</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="0001-01-01">January 01, 0001</time></span>
+				</div>
+				<section>
+					
+
+<p>Getting started with a new web framework can be a bit scary.
+Luckily, Scalatra is easy to install, as it has relatively few dependencies.</p>
+
+<p>It can run on Windows, Mac OS X, Linux, or BSD.</p>
+
+<hr />
+
+<h2 id="1-install-a-jdk">1. Install a JDK</h2>
+
+<p>Scalatra is web micro-framework written in Scala, so you&rsquo;ll need to have a
+Java Development Kit (JDK) installed.</p>
+
+<p>Many systems come with a JDK pre-loaded.</p>
+
+<p>Run <code>java -version</code> and <code>javac -version</code> in a terminal to find if yours
+does. The output should look something like this:</p>
+
+<pre><code class="language-bash">$ java -version
+java version &quot;1.8.0_11&quot;
+Java(TM) SE Runtime Environment (build 1.8.0_11-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.11-b03, mixed mode)
+</code></pre>
+
+<pre><code class="language-bash">$ javac -version
+javac 1.8.0_11
+</code></pre>
+
+<p>You need Java 8, which will show up as version 1.8. Java 7 is no longer supported in Scalatra 2.5.</p>
+
+<p>If you don&rsquo;t yet have Java installed, you can find out how to install
+it for your system
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">over at the Java 8 install page</a>. Make sure you&rsquo;re using OpenJDK or Sun&rsquo;s JDK.</p>
+
+<p>Some Linux distros pre-install <code>gcj</code>, which won&rsquo;t work.</p>
+
+<h2 id="2-install-giter8">2. Install giter8</h2>
+
+<p>Once you&rsquo;re sure you&rsquo;ve got Java installed, you will need to download a few
+other utilities.</p>
+
+<p><a href="https://github.com/foundweekends/conscript">Conscript</a> is a tool for installing and
+updating Scala code.
+<a href="https://github.com/foundweekends/giter8/">giter8</a>, which depends on conscript, allows you to check out project templates directly from Github.
+It&rsquo;s the recommended way to generate Scalatra project skeletons.</p>
+
+<h3 id="install-conscript">Install conscript</h3>
+
+<pre><code class="language-bash">curl https://raw.githubusercontent.com/foundweekends/conscript/master/setup.sh | sh
+</code></pre>
+
+<p>This will create a <code>bin</code> folder in your home directory.
+Make sure it&rsquo;s in your <code>PATH</code> by adding the following to your shell&rsquo;s
+profile (often <code>~/.bash_profile</code> on Mac and <code>~/.bashrc</code> on Linux):</p>
+
+<pre><code class="language-bash">PATH=$PATH:~/bin
+export PATH
+source ~/.bash_profile # (Mac)
+source ~/.bashrc       # (Linux)
+</code></pre>
+
+<h3 id="install-giter8-h4">Install giter8</h4></h3>
+
+<pre><code class="language-bash">cs foundweekends/giter8
+</code></pre>
+
+<p>Depending on your connection speed, this can take a bit of time, as
+<code>conscript</code> downloads quite a few Scala dependencies.</p>
+
+<p>Alternatively, you can install <code>giter8</code> on a Mac via
+<a href="http://brew.sh/">homebrew</a>:</p>
+
+<pre><code class="language-bash">brew install giter8
+</code></pre>
+
+<hr />
+
+<p>With installation out of the way, head over to the &ldquo;<a href="first-project.html">first project</a>&ldquo;
+page, which will show you how to generate, build, and run a Scalatra application.</p>
+
+				</section>
+			</article>
+		</main>
+	</div> 
+
+</div> 
+
+
+<hr />
+
+<div class="row">
+	<div class="col-sm-8">
+		<p class="doc-footer-em"><a href="#" onclick="resetSidebarPos()">Back to TOP</a></p>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+	
+	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
+</footer>
+
+
+
+<script src="https://dozed.github.io/hugo-site//js/jquery.min.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootstrap.min.js"></script>
+
+<script src="https://dozed.github.io/hugo-site//js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://dozed.github.io/hugo-site//js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootie-docs.js"></script>
+
+</body>
+</html>
+

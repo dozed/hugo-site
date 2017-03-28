@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Scalatra">
+		<link rel="icon" href="https://dozed.github.io/hugo-site//favicon.ico">
+		<title>Scalatra 2.2 released - Scalatra</title>
+		
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/highlight/github.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/theme.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootie-docs.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/site.css">
+	</head>
+
+<body role="document">
+
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="https://dozed.github.io/hugo-site//">Scalatra</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+			
+			
+				
+					<li ><a href="/hugo-site/getting-started/">Getting started</a></li>
+				
+					<li ><a href="/hugo-site/guides/">Guides</a></li>
+				
+					<li ><a href="/hugo-site/news/">News</a></li>
+				
+					<li ><a href="/hugo-site/community/">Community</a></li>
+				
+			
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">API docs<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.5/org/scalatra/">2.5</a></li>
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.4/org/scalatra/">2.4</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+
+
+<div class="row">
+
+	
+
+<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
+	<div id="sidebar">
+	<div class="sidebar-module">
+		<div class="sidebar-toc">
+			<h4 class="sidebar-heading">Table of Contents</h4>
+			<ul>
+				<li><strong><a href="#title">Scalatra 2.2 released</a></strong></li>
+			</ul>
+			
+		</div>
+	</div>
+	</div>
+</div>
+
+
+	<div class="col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Scalatra 2.2 released</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2013-02-06">February 06, 2013</time></span>
+				</div>
+				<section>
+					<p>The Scalatra team is excited to finally be able to say: we&rsquo;ve just released Scalatra 2.2.0, 2.1.2 and 2.0.5.</p>
+
+<p></p>
+
+<p>Let&rsquo;s talk about the old branches first.</p>
+
+<p>We&rsquo;ve published 2.0.5 for Scala 2.10 so you can safely upgrade on servlet 2.5 containers. This gives anyone stuck deploying on older servlet containers a path to Scala 2.10.</p>
+
+<p>2.1.2 is mostly a bug fix release, and allows for overriding the asyncTimeout in AkkaSupport.</p>
+
+<p>Scalatra 2.2 is the new stable release, and we think it&rsquo;s the most biggest and most exciting release in the history of the project. The changes in 2.2 are listed here: <a href="http://notes.implicit.ly/post/42420935465/scalatra-2-2-0">http://notes.implicit.ly/post/42420935465/scalatra-2-2-0</a>.</p>
+
+<p>We are now also publishing Scalatra data to <a href="http://ls.implicit.ly">ls.implicit.ly</a>.</p>
+
+<p>There are a few breaking changes in 2.2:</p>
+
+<ul>
+<li>AkkaSupport now uses an ExecutionContext instead of an ActorSystem</li>
+<li>LiftJsonSupport has been removed in favor of <a href="http://json4s.org">Json4s</a>, which is a drop-in replacement</li>
+<li>All the signatures of the methods that access values in the request or response now take an implicit request and/or response</li>
+</ul>
+
+<p>This last one is particularly important if you are making heavy use of Akka Futures from your routes. Scalatra now stores the request and response in a thread-local and when you use Futures you can&rsquo;t access those anymore. This stops you from inadvertantly closing a Future (which should contain only immutable data) over the servlet request (which is unavoidably mutable), and should make your programming experience safer and more enjoyable.</p>
+
+<p>If you had overrides your code won&rsquo;t compile until you add the necessary implicits to the signature.</p>
+
+<p>When you want to use Futures and be able to safely access values in the request there is now an AsyncResult, like this:</p>
+
+<pre><code class="language-scala">  get(&quot;/:name&quot;) {
+   new AsyncResult { def is =
+     (timeActor  ? &quot;Get Current Time&quot;).mapTo[String].map(&quot;hello &quot; + params(&quot;name&quot;) + &quot; it's currently &quot; + _)
+   }
+ }
+</code></pre>
+
+<p>When you have methods that access the request, and you use Futures in this way, you can also add an implicit request or response object so that it&rsquo;s safe to use this method from within Futures.</p>
+				</section>
+			</article>
+		</main>
+	</div> 
+
+</div> 
+
+
+<hr />
+
+<div class="row">
+	<div class="col-sm-8">
+		<p class="doc-footer-em"><a href="#" onclick="resetSidebarPos()">Back to TOP</a></p>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+	
+	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
+</footer>
+
+
+
+<script src="https://dozed.github.io/hugo-site//js/jquery.min.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootstrap.min.js"></script>
+
+<script src="https://dozed.github.io/hugo-site//js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://dozed.github.io/hugo-site//js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootie-docs.js"></script>
+
+</body>
+</html>
+

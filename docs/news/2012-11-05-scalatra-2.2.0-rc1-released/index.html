@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Scalatra">
+		<link rel="icon" href="https://dozed.github.io/hugo-site//favicon.ico">
+		<title>Scalatra 2.2.0-RC1 Released - Scalatra</title>
+		
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/highlight/github.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/theme.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootie-docs.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/site.css">
+	</head>
+
+<body role="document">
+
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="https://dozed.github.io/hugo-site//">Scalatra</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+			
+			
+				
+					<li ><a href="/hugo-site/getting-started/">Getting started</a></li>
+				
+					<li ><a href="/hugo-site/guides/">Guides</a></li>
+				
+					<li ><a href="/hugo-site/news/">News</a></li>
+				
+					<li ><a href="/hugo-site/community/">Community</a></li>
+				
+			
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">API docs<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.5/org/scalatra/">2.5</a></li>
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.4/org/scalatra/">2.4</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+
+
+<div class="row">
+
+	
+
+<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
+	<div id="sidebar">
+	<div class="sidebar-module">
+		<div class="sidebar-toc">
+			<h4 class="sidebar-heading">Table of Contents</h4>
+			<ul>
+				<li><strong><a href="#title">Scalatra 2.2.0-RC1 Released</a></strong></li>
+			</ul>
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#global">Global</a></li>
+<li><a href="#core">Core</a></li>
+<li><a href="#lift-json">lift-json</a></li>
+<li><a href="#jackson">Jackson</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#scalate">Scalate</a></li>
+<li><a href="#databinding">Databinding</a></li>
+<li><a href="#atmosphere">Atmosphere</a></li>
+<li><a href="#swagger">Swagger</a></li>
+<li><a href="#swagger-ext">Swagger-Ext</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#auth">Auth</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+	<div class="col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Scalatra 2.2.0-RC1 Released</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2012-11-05">November 05, 2012</time></span>
+				</div>
+				<section>
+					<p>Scalatra 2.2 has been in development for about the past two months. As the release is nearly completed, the project has cut a release candidate, Scalatra 2.2.0-RC1.</p>
+
+<p></p>
+
+<p>Here&rsquo;s a quick rundown of what&rsquo;s changed since 2.1.1, the current stable release. Some new (but incomplete) documentation for this release candidate is also available, at <a href="http://scalatra.org/2.2/guides/">http://scalatra.org/2.2/guides/</a></p>
+
+<p>Testing, bug reports, and feedback are all very welcome.</p>
+
+<h3 id="global">Global</h3>
+
+<ul>
+<li>Removes jerkson support</li>
+<li>Removes anti-xml support</li>
+<li>Adds Jackson support</li>
+<li>Adds common traits for pluggable json serialization. These traits allow library writers to write against a generic json interface. The application developer can then mix in a specific json implementation, such as lift-json or jackson, and retain all functionality</li>
+<li>Defers reading request parameters until the last responsible moment (aka lazify)</li>
+<li>Contrib project has been removed. All the contrib modules have been moved into the main Scalatra project</li>
+</ul>
+
+<h3 id="core">Core</h3>
+
+<ul>
+<li>Adds typed param support, previously in contrib</li>
+<li><code>ApiFormats</code> now also has a method <code>responseFormat</code> which looks at the content type of the response and falls back to the format of the request.</li>
+<li>The default bootstrap file is renamed from <code>Scalatra</code> to <code>ScalatraBootstrap</code></li>
+<li><code>FileUpload</code> can now be configured through init parameters</li>
+<li>RouteMatchers don&rsquo;t use any by-name params anymore</li>
+<li><code>RouteMatcher</code> now takes a <code>requestPath</code> as a param to the <code>apply</code> method</li>
+<li>You are able to mount the same servlet more than once in the <code>ScalatraBootstrap</code> class</li>
+<li>Added a new <code>relativeUrl</code> method which will compose a path for redirection and keep relative paths relative</li>
+<li>Refactored the <code>url</code> method to allow for a more granular building of the path with regards to the context path and servlet path</li>
+<li>Added a <code>fullUrl</code> method which will use the absolute path created by the <code>url</code> method to build a url with protocol, host, port and path + querystring</li>
+<li>Added a <code>isHttps</code> method which also looks in the headers for a <code>X-Forwarded-Proto</code> header</li>
+<li>Added a <code>needsHttps</code> method which looks in the init params for a key <code>org.scalatra.ForceHttps</code> for a boolean value (true/false), this is used by the <code>fullUrl</code> method to work out the protocol</li>
+<li>Added a <code>org.scalatra.HostName</code> init parameter in which you can override the host name of this scalatra application, if unset the value from <code>request.getServerName</code> will be used</li>
+<li>Added a <code>org.scalatra.Port</code> init parameter in which you can override the port of this scalatra application, if unset the value from <code>request.getServerPort</code> will be used</li>
+<li>ApiFormats now also has a reverse mapping for the txt extension</li>
+</ul>
+
+<h3 id="lift-json">lift-json</h3>
+
+<ul>
+<li>removed in favour of json4s support</li>
+</ul>
+
+<h3 id="jackson">Jackson</h3>
+
+<ul>
+<li>removed in favour of json4s support</li>
+</ul>
+
+<h3 id="json">JSON</h3>
+
+<ul>
+<li>previous lift-json support is replaced with json4s support.</li>
+<li>Jackson integration is also provided through json4s</li>
+<li>Replaces ProductToJsonSupport trait with a <code>JValueResult</code> trait which will try to serialize any value to json or xml
+when the accept headers or format parameter indicate the user wants json or xml.</li>
+</ul>
+
+<h3 id="scalate">Scalate</h3>
+
+<ul>
+<li>Adds ScalateRenderSupport trait taken from contrib</li>
+</ul>
+
+<h3 id="databinding">Databinding</h3>
+
+<ul>
+<li>Adds a databinding module for commands.
+The commands can have validations attached and will read data from headers, params and the request body (like json/xml)
+This is implemented using an infrastructure of type classes and uses scalaz validations to capture the validation information.</li>
+</ul>
+
+<pre><code class="language-scala">        class RegisterForm extends JacksonCommand { // you have to pick the json library of choice
+
+          val login: Field[String] = asString(&quot;login&quot;).required.notBlank.minLength(6).validForFormat(&quot;\\w+&quot;.r)
+
+          val name: Field[String] = asString(&quot;name&quot;)
+
+          val email: Field[String] = asString(&quot;email&quot;).required.notBlank.validEmail
+
+          val homepage: Field[String] = asString(&quot;homepage&quot;).validUrl
+
+          val passwordConfirmation: FieldBinding = asString(&quot;passwordConfirmation&quot;).required.notBlank
+
+          val password: FieldBinding = asString(&quot;password&quot;).required.notBlank.validConfirmation(&quot;passwordConfirmation&quot;, passwordConfirmation.value)
+
+        }
+</code></pre>
+
+<h3 id="atmosphere">Atmosphere</h3>
+
+<ul>
+<li>Adds an atmosphere integration. This module adds support for websockets, long-polling, and server-side events.</li>
+</ul>
+
+<pre><code class="language-scala">
+        class MyAtmoServlet {
+          def receive = {
+            case Connected =&gt;
+            case Disconnected(disconnector, Some(error)) =&gt;
+            case Error(Some(error)) =&gt;
+            case TextMessage(text) =&gt; send(&quot;ECHO: &quot; + text)
+            case JsonMessage(json) =&gt; broadcast(json)
+          }
+        }
+</code></pre>
+
+<h3 id="swagger">Swagger</h3>
+
+<ul>
+<li>Added serialization for AllowableValues in <code>Swagger.scala</code>.  These are passed as strings in the AllowableValues object:</li>
+</ul>
+
+<pre><code class="language-scala">  // as List
+  allowableValues = AllowableValues(1, 2, 3)
+
+  // as range
+  allowableValues = AllowableValues(0 to 1000)
+</code></pre>
+
+<ul>
+<li>Updated to support the <a href="https://github.com/wordnik/swagger-core/wiki/API-Declaration">swagger-1.1 spec</a></li>
+<li>Allows for using either jackson or native json to generate the service description json</li>
+<li>Auto-registers servlets and filters that extend the SwaggerSupport trait in the swagger manager.</li>
+<li>Includes the swagger-core and swagger-annotations jars as transitive dependencies (batteries included)</li>
+<li>the models property in the <code>SwaggerSupport</code> can now be Set as <code>Map(classOf[Pet])</code></li>
+<li>responseClass can now be set with a type parameter <code>responseClass[Pet]</code></li>
+<li>data types in <code>Parameter</code> and <code>ModelField</code> definitions can now be defined as <code>DataType[List[String]]</code></li>
+</ul>
+
+<h3 id="swagger-ext">Swagger-Ext</h3>
+
+<ul>
+<li>Adds support for authorization through scentry to Swagger.  Shows only actions a user is allowed to see.
+<a href="https://github.com/scalatra/scalatra/blob/develop/swagger-ext/src/test/scala/org/scalatra/swagger/SwaggerAuthSpec.scala">Example</a></li>
+<li>Adds support for using commands with Swagger. This creates a model definition for the body parameters and parameter
+definitions for the query, path and header params as well as a parameter for the body model</li>
+</ul>
+
+<pre><code class="language-scala">  // So your route looks like this:
+  get(&quot;/id&quot;, endpoint(&quot;id&quot;), nickname(&quot;getById&quot;), parameters[MyCommand])
+
+  // MyCommand is a databinder which takes care of automatic
+  // validation and binding of incoming params, and also allows
+  // Swagger params annotations to be automatically inferred from
+  // the MyCommand params.  
+  class MyCommand extends JsonCommand {
+    protected implicit val jsonFormats: Formats = DefaultFormats
+
+    val name: Field[String] = asString(&quot;name&quot;).notBlank
+
+    val age: Field[Int] = &quot;age&quot;
+
+    val token: Field[String] = (
+        asString(&quot;API-TOKEN&quot;).notBlank
+          sourcedFrom ValueSource.Header
+          description &quot;The API token for this request&quot;
+          notes &quot;Invalid data kills cute innocent kittens&quot;
+          allowableValues &quot;123&quot;)
+
+    val skip: Field[Int] = asInt(&quot;skip&quot;).sourcedFrom(ValueSource.Query).description(&quot;The offset for this collection index&quot;)
+
+    val limit: Field[Int] = asType[Int](&quot;limit&quot;).sourcedFrom(ValueSource.Query).withDefaultValue(20).description(&quot;the max number of items to return&quot;)
+  }
+</code></pre>
+
+<h3 id="testing">Testing</h3>
+
+<ul>
+<li>Added a method <code>ensureSessionIsSerializable</code> method which will try to serialize every session value.</li>
+</ul>
+
+<h3 id="auth">Auth</h3>
+
+<ul>
+<li>Scentry is now lazily initialized so the order of the traits doesn&rsquo;t matter anymore</li>
+</ul>
+				</section>
+			</article>
+		</main>
+	</div> 
+
+</div> 
+
+
+<hr />
+
+<div class="row">
+	<div class="col-sm-8">
+		<p class="doc-footer-em"><a href="#" onclick="resetSidebarPos()">Back to TOP</a></p>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+	
+	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
+</footer>
+
+
+
+<script src="https://dozed.github.io/hugo-site//js/jquery.min.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootstrap.min.js"></script>
+
+<script src="https://dozed.github.io/hugo-site//js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://dozed.github.io/hugo-site//js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootie-docs.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Scalatra">
+		<link rel="icon" href="https://dozed.github.io/hugo-site//favicon.ico">
+		<title>Scalatra 2.3.0 released - Scalatra</title>
+		
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/highlight/github.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/theme.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/bootie-docs.css">
+		<link rel="stylesheet" href="https://dozed.github.io/hugo-site//css/site.css">
+	</head>
+
+<body role="document">
+
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="https://dozed.github.io/hugo-site//">Scalatra</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+			
+			
+				
+					<li ><a href="/hugo-site/getting-started/">Getting started</a></li>
+				
+					<li ><a href="/hugo-site/guides/">Guides</a></li>
+				
+					<li ><a href="/hugo-site/news/">News</a></li>
+				
+					<li ><a href="/hugo-site/community/">Community</a></li>
+				
+			
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">API docs<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.5/org/scalatra/">2.5</a></li>
+							<li><a href="https://dozed.github.io/hugo-site//apidocs/2.4/org/scalatra/">2.4</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+
+
+<div class="row">
+
+	
+
+<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
+	<div id="sidebar">
+	<div class="sidebar-module">
+		<div class="sidebar-toc">
+			<h4 class="sidebar-heading">Table of Contents</h4>
+			<ul>
+				<li><strong><a href="#title">Scalatra 2.3.0 released</a></strong></li>
+			</ul>
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#core">Core</a></li>
+<li><a href="#atmosphere">Atmosphere</a></li>
+<li><a href="#commands">Commands</a></li>
+<li><a href="#i18n">I18n</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#scalate">Scalate</a></li>
+<li><a href="#spring">Spring</a></li>
+<li><a href="#swagger">Swagger</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+	<div class="col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Scalatra 2.3.0 released</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2014-06-11">June 11, 2014</time></span>
+				</div>
+				<section>
+					<p>The Scalatra team is pleased to announce the release of Scalatra 2.3.0.</p>
+
+<p></p>
+
+<h3 id="core">Core</h3>
+
+<ul>
+<li>Breaking: Scalatra 2.3.x drops support for Scala 2.9.</li>
+<li>Breaking: Require java 7</li>
+<li>Breaking: if you have custom route transformer hooks the function now needs a param type</li>
+</ul>
+
+<p>Before:</p>
+
+<pre><code>protected def swaggerMeta(s: Symbol, v: Any): RouteTransformer = { route ⇒
+    route.copy(metadata = route.metadata + (s -&gt; v))
+}
+</code></pre>
+
+<p>Now:</p>
+
+<pre><code>protected def swaggerMeta(s: Symbol, v: Any): RouteTransformer = { (route: Route) ⇒
+    route.copy(metadata = route.metadata + (s -&gt; v))
+}
+</code></pre>
+
+<ul>
+<li>Updates to servlet 3.1</li>
+<li>Change FutureSupport.timeout from a Timeout to a Duration.</li>
+<li>Add a timeout to AsyncResult.</li>
+<li>Run callbacks before render in renderResponseBody.</li>
+<li>Redirect returns Nothing, not unit.</li>
+<li>Allow calling halt from trap handler.</li>
+<li>Remove Akka dependency. Only scala.concurrent is needed.</li>
+<li>Stack trace of uncaught exceptions only renders in development mode by default. Hook renderUncaughtException is now protected.</li>
+<li>Render unhandled exceptions from failed Futures.</li>
+<li>Fix #342: Verify that gzip Content-Encoding header gets added only once</li>
+<li>Fix #349: Fix css mime type detection</li>
+<li>Fix #351: Fix ScalatraServlet.requestPath for encoded unicode URI</li>
+<li>Added support for loadOnStartup when mounting servlets</li>
+<li>Moved function to retrieve environment to RichServletContext</li>
+<li>Fix #277: Only catch ClassNotFoundException in ScalatraBootstrap</li>
+<li>Fix #319: responseFormat crashes with unrecognized MIME type</li>
+<li>Fix #296: Check for http again when generating a full url</li>
+</ul>
+
+<h3 id="atmosphere">Atmosphere</h3>
+
+<ul>
+<li>Make ScalatraBroadcaster a trait for custom broadcasters.</li>
+<li>Add RedisScalatraBroadcaster.</li>
+<li>Support ClientFilter with Redis Atmosphere plugin.</li>
+<li>Don’t kill httpsession on atmosphere disconnect.</li>
+<li>Fix Atmosphere: raise the connected event a little bit later to avoid a race</li>
+<li>Scalatra broadcaster logs at trace level instead of info level</li>
+<li>Update to atmosphere 2.1</li>
+<li>Fix #271: Make atmoshpere client Serializable</li>
+<li>Make connection string for RedisScalatraBroadcaster configurable</li>
+<li>improve error message when no Get route is defined while using AtmosphereSupport</li>
+<li>Fix NPE in AtmosphereClient when looking up an unknown broadcaster</li>
+<li>simplify TrackMessageSizeInterceptor configuration</li>
+</ul>
+
+<h3 id="commands">Commands</h3>
+
+<ul>
+<li>Ensure ordering of properties on body parameters from a command by adding a position method.</li>
+</ul>
+
+<h3 id="i18n">I18n</h3>
+
+<ul>
+<li>Provide a way to implement custom Messages resolver.</li>
+</ul>
+
+<h3 id="json">JSON</h3>
+
+<ul>
+<li>Support custom serializers in JValueResult.</li>
+<li>Check if response is JSON or XML in renderJson.</li>
+<li>Update json4s to 3.2.10</li>
+<li>Use the character encoding from the request to read the json input stream.</li>
+</ul>
+
+<h3 id="scalate">Scalate</h3>
+
+<ul>
+<li>Don’t always render the Scalate Error page.</li>
+<li>Fix #336: Only use a single scalate template engine</li>
+</ul>
+
+<h3 id="spring">Spring</h3>
+
+<ul>
+<li>New support module for Spring.</li>
+</ul>
+
+<h3 id="swagger">Swagger</h3>
+
+<ul>
+<li>BREAKING Use 1.2 spec.</li>
+<li>Add naive exclusion based on simple class name and known model ID.</li>
+<li>Add apiOperation and parameter methods that use a swagger model declaration directly.</li>
+<li>Fix detection of default value.</li>
+<li>Fix Option data type on models.</li>
+<li>Fix NPE when the model property has a default value of null.</li>
+<li>Fix URL generation when a context path is set.</li>
+<li>Fix serialization of data type for operations and parameters.</li>
+<li>Fix Option[List[_]] reflection.</li>
+<li>Output position in Swager spec so model properties have a stable order.</li>
+<li>Annotated properties are required by default.</li>
+<li>Force compilation error for apiOperation without type param.</li>
+<li>Add a form param to swagger support</li>
+<li>Fix swagger to support application names that have a ‘/’ in them</li>
+<li>Fix #354: Don’t stackoverflow in swagger with a self-referencing model</li>
+</ul>
+				</section>
+			</article>
+		</main>
+	</div> 
+
+</div> 
+
+
+<hr />
+
+<div class="row">
+	<div class="col-sm-8">
+		<p class="doc-footer-em"><a href="#" onclick="resetSidebarPos()">Back to TOP</a></p>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+	
+	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
+</footer>
+
+
+
+<script src="https://dozed.github.io/hugo-site//js/jquery.min.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootstrap.min.js"></script>
+
+<script src="https://dozed.github.io/hugo-site//js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://dozed.github.io/hugo-site//js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://dozed.github.io/hugo-site//js/bootie-docs.js"></script>
+
+</body>
+</html>
+

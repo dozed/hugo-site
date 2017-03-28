@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2016-11-21-scalatra-2-5-released/</loc>
+    <lastmod>2016-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2015-12-20-scalatra-2-4-released/</loc>
+    <lastmod>2015-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2015-10-07-scalatra-2-4-comming-soon/</loc>
+    <lastmod>2015-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2014-06-11-scalatra-2-3-released/</loc>
+    <lastmod>2014-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2013-12-07-scalatra-2-2-2-and-2-3-0M1released/</loc>
+    <lastmod>2013-12-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2013-09-20-scalatra-in-action-routing-chapter-released/</loc>
+    <lastmod>2013-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2013-09-16-gitbucket-release/</loc>
+    <lastmod>2013-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2013-05-19-new-persistence-guides/</loc>
+    <lastmod>2013-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2013-04-10-scalatra-2-2-1-released/</loc>
+    <lastmod>2013-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2013-02-06-scalatra2-2-released/</loc>
+    <lastmod>2013-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2013-01-29-scalatra-in-action/</loc>
+    <lastmod>2012-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-12-19-scala-2.10-support/</loc>
+    <lastmod>2012-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-12-19-scalatra-2.2.0-rc2-released/</loc>
+    <lastmod>2012-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-12-19-scalatra-usage-increasing/</loc>
+    <lastmod>2012-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-12-07-ivan-talks-scalatra-on-scalatypes-podcast/</loc>
+    <lastmod>2012-12-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-12-02-atmosphere-guide/</loc>
+    <lastmod>2012-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-11-10-swagger-databindings/</loc>
+    <lastmod>2012-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-11-05-scalatra-2.2.0-rc1-released/</loc>
+    <lastmod>2012-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-11-04-scalatra-roundup-databinders-swagger-and-more-docs/</loc>
+    <lastmod>2012-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-09-21-scalatra-roundup-atmosphere-hits-develop-branch/</loc>
+    <lastmod>2012-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-09-13-new-tutorials/</loc>
+    <lastmod>2012-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-09-12-scalatra-dev-roundup/</loc>
+    <lastmod>2012-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-09-01-scalatra-2-1-1-released/</loc>
+    <lastmod>2012-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/2012-08-12-scalatra-2-1-released/</loc>
+    <lastmod>2012-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/http/actions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/http/actions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/http/actions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/http/actions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/async/akka/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/async/akka/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/async/akka/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/async/akka/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/async/atmosphere/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/async/atmosphere/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/async/atmosphere/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/async/atmosphere/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/http/authentication/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/http/authentication/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/http/authentication/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/http/authentication/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/community/built-with/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/web-services/cors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/web-services/cors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/web-services/cors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/web-services/cors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/resources/coffeescript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/resources/coffeescript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/resources/coffeescript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/resources/coffeescript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/formats/commands/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/formats/commands/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/formats/commands/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/formats/commands/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/community/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/deployment/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/deployment/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/deployment/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/deployment/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/testing/continuous-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/testing/continuous-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/testing/continuous-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/testing/continuous-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/deployment/cloudbees/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/deployment/cloudbees/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/deployment/cloudbees/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/deployment/cloudbees/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/deployment/heroku/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/deployment/heroku/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/deployment/heroku/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/deployment/heroku/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/deployment/jelastic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/deployment/jelastic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/deployment/jelastic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/deployment/jelastic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/deployment/servlet-container/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/deployment/servlet-container/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/deployment/servlet-container/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/deployment/servlet-container/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/formats/upload/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/formats/upload/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/formats/upload/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/formats/upload/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/getting-started/first-project/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/http/flash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/http/flash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/http/flash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/http/flash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/formats/forms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/getting-started/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/deployment/google-app-engine/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/deployment/google-app-engine/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/deployment/google-app-engine/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/deployment/google-app-engine/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/http/gzip/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/http/gzip/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/http/gzip/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/http/gzip/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/formats/json/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/formats/json/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/formats/json/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/formats/json/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/modules/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/modules/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/modules/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/modules/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/getting-started/ide-support/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/views/inline-html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/views/inline-html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/views/inline-html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/views/inline-html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/getting-started/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/internationalization/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/internationalization/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/internationalization/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/internationalization/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/persistence/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/persistence/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/persistence/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/persistence/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/getting-started/jrebel/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/testing/jasmine/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/resources/less-css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/resources/less-css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/resources/less-css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/resources/less-css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/monitoring/logging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/monitoring/logging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/monitoring/logging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/monitoring/logging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/monitoring/metrics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/monitoring/metrics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/monitoring/metrics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/persistence/mongodb/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/persistence/mongodb/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/persistence/mongodb/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/persistence/mongodb/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/news/</loc>
+    <lastmod>2016-11-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/getting-started/project-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/http/requests-and-responses/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/http/requests-and-responses/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/http/requests-and-responses/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/http/requests-and-responses/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/http/reverse-routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/http/reverse-routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/http/reverse-routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/http/reverse-routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/persistence/riak/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/persistence/riak/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/persistence/riak/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/persistence/riak/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/http/routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/http/routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/http/routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/http/routes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/testing/scalacheck/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/testing/scalatest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/testing/scalatest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/testing/scalatest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/testing/scalatest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/views/scalate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/views/scalate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/views/scalate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/views/scalate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/</loc>
+    <lastmod>2016-11-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/scalatra-philosophy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/scalatra-philosophy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/scalatra-philosophy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/philosophy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/testing/scalatratest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/testing/scalatratest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/testing/scalatratest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/testing/scalatratest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/testing/selenium/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/http/sessions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/http/sessions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/http/sessions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/http/sessions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/persistence/slick/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/persistence/slick/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/persistence/slick/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/persistence/slick/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/testing/specs2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/testing/specs2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/testing/specs2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/testing/specs2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/persistence/squeryl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/persistence/squeryl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/persistence/squeryl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/persistence/squeryl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/deployment/standalone/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/deployment/standalone/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/deployment/standalone/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/deployment/standalone/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/swagger/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/swagger/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/swagger/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/swagger/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/community/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/views/twirl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/views/twirl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/views/twirl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/views/twirl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/formats/xml/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.2/resources/wro4j/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.3/resources/wro4j/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.4/resources/wro4j/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dozed.github.io/hugo-site/guides/2.5/resources/wro4j/</loc>
+  </url>
+  
+</urlset>
