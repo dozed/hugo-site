@@ -1,0 +1,26 @@
+{{ $baseUrl := .Site.BaseURL }}
+{{ partial "header.html" . }}
+
+<main role="main">
+
+<div class="row jumbotron">
+	<div class="col-md-4">
+    <img src="images/logo-x.png" class="img-rounded">
+  </div>
+  <div class="col-md-6">
+    <p>Scalatra is a simple, accessible and free web micro-framework.</p>
+    <p> It combines the power of the JVM with the beauty and brevity of Scala,
+        helping you quickly build high-performance web sites and APIs.</p>
+  </div>
+</div>
+
+{{ range where .Site.Pages "Title" "_index" }}
+	<div class="row doc-main">
+		<p class="doc-entry-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></p>
+		{{ .Content }}
+	</div>
+{{ end }}
+
+</main>
+
+{{ partial "footer.html" . }}
