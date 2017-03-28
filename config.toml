@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Scalatra"
-baseurl = "/"
+# baseurl = "/"
 # baseurl = "http://example.org/"
 
 [params]
