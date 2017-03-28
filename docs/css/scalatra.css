@@ -25,7 +25,7 @@ footer[role="contentinfo"] a:hover {
 }
 
 .navbar-brand {
-  background: url(/images/logo-s.png) no-repeat 0px 10px;
+  background: url(../images/logo-s.png) no-repeat 0px 10px;
   width: 120px;
   text-indent: -999em; }
 
